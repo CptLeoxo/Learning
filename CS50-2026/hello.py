@@ -3,14 +3,28 @@
 # docs.python org/3/library/functions.html
 # print(*objects, sep='', end='\n', file=sys.stdout, flush=False)
 
+# .capitalize() -> only capitalizing the first [0] one char
 
+name = input("What's your name?\n").strip().title()  # Prompt the user for their name with stripping from whitespaces and capitalizing name 
 
-name = input("What's your name?\n")  # Prompt the user for their name
+# Remove whitespace from str and capitalize user's name in one as a new line of code
+# name = name.strip().capitalize()
 
-print(f"Hello, {name}!")
+# Or only capitalize as a new code name = name.capitalize() 
 
-surname = input("What's your surname?\n")  # Prompt the user for their surname
-print("Nice to meet you", surname)
+first, last = name.split(" ")
+
+print(f"Hello, {first} {last}!")
+print("Your name is", name, sep="???")
 
 age = input("How old are you?\n")  # Prompt the user for their age
 print("You are " + age)
+
+hobby = input("What is your hobby?\n")  # Prompt the user for their hobby
+print("Your hobby is ", end="") # Print the hobby without a newline at the end
+print(hobby)
+
+print('So you\'re a "coder"')
+
+book = input("What is your favourite book?").title()
+print(f"Your favourite book is {book}")
