@@ -16,12 +16,16 @@ def check_server(server, ip):
     print(f"Starting checks: {server} {ip}")
     print(f"Ping on server {server} is {current_ping} ms")
     return current_ping
-    
 
-for server, ip in servers.items():
-    latency = check_server(server, ip)
+def ping():
+    for server, ip in servers.items():
+        latency = check_server(server, ip)
+        
+        if latency > 300:
+            print("Warning! Ping is too high!")
+        else:
+            print("Status: Everything is fine.")
+        
+if __name__ == "__main__":
+    ping()
     
-    if latency > 300:
-        print("Warning! Ping is too high!")
-    else:
-        print("Status: Everything is fine.")
