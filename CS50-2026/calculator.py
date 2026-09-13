@@ -1,3 +1,5 @@
+# Week one
+
 print("This is a calculator")
 
 def main():
@@ -14,7 +16,7 @@ def main():
 
     print(calculator(type_of_number, x, y))
 
-def calculator(type_of_number, x=0, y=0):
+def calculator(type_of_number, x, y):
 
     if type_of_number == "Float":
         try:

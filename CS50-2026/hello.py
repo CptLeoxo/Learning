@@ -1,3 +1,6 @@
+# Week one
+
+'''
 # To run this script, type "python3 hello.py" in your terminal.
 
 # docs.python org/3/library/functions.html
@@ -25,6 +28,8 @@
 # print(hobby)
 
 # print('So you\'re a "coder"')
+
+'''
 
 # book = input("What is your favourite book?").title()
 # print(f"Your favourite book is {book}")
