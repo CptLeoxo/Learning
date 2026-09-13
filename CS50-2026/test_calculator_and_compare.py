@@ -23,12 +23,12 @@ def test_invalid_value():
     assert calculator("Float", "five", "6.7") == "Error: Please enter only numbers."
 
 def test_greater():
-    assert compare("5", "10") == "x is greater then y"
+    assert compare("10", "5") == "x is greater then y"
     assert compare("0", "-10") == "x is greater then y"
 
 
 def test_less():
-    assert compare("10", "5") == "x is less then y"
+    assert compare("5", "10") == "x is less then y"
     assert compare("-10", "0") == "x is less then y"
 
 def test_equal():
