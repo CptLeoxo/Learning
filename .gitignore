@@ -1,2 +1,14 @@
+# Virtual environments Python
+venv/
 .venv/
+env/
+
+# Cache Python
 __pycache__/
+*.pyc
+
+# Top secret files
+.env
+
+# Local setting of vscode
+.vscode/
