@@ -1,2 +1,3 @@
 # Python
-This repo is for Python codes.
+
+This repo is for Python codes from CS Harvard course online.
