@@ -19,4 +19,4 @@ jobs:
         
       - name: Run Pytest
         # Указываем путь к твоему файлу с тестами
-        run: pytest CS50-2026/test_calculator.py
+        run: pytest CS50-2026/test_calculator_and_compare.py
