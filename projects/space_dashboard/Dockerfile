@@ -7,7 +7,7 @@ WORKDIR /app
 # Copying requirements
 COPY requirements.txt .
 
-# Installing requirements in container
+# Installing requirements in container -> --no-cahce-dir will save space without cache
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copying code
