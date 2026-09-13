@@ -1,0 +1,22 @@
+name: Python Tests
+
+on: [push] # Запускать при каждом пуше в репозиторий
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4 # Скачиваем твой код
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          
+      - name: Install dependencies
+        run: pip install pytest
+        
+      - name: Run Pytest
+        # Указываем путь к твоему файлу с тестами
+        run: pytest CS50-2026/test_calculator.py
