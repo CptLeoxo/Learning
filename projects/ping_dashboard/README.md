@@ -15,7 +15,7 @@ A lightweight Python Flask web dashboard for monitoring server ping latency. Thi
 Navigate to the directory containing the `Dockerfile` and run:
 
 ```bash
-docker build -t space-dashboard .
+docker build -t ping-dashboard .
 ```
 
 ### 2. Run the Container
@@ -23,7 +23,7 @@ docker build -t space-dashboard .
 Start the container in detached mode and map port `8080` to your localhost:
 
 ```bash
-docker run -d -p 8080:8080 --name my-dashboard space-dashboard
+docker run -d -p 8080:8080 --name my-dashboard ping-dashboard
 ```
 
 ### 3. Access the Dashboard
