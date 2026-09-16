@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Adding parent folder to tests
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import pytest
 from app import app
 
