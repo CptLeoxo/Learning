@@ -50,3 +50,5 @@ Stop the container gracefully:
 ```bash
 docker stop my-dashboard
 ```
+
+Working on it.
