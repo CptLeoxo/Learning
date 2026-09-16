@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: projects/space_dashboard
+        working-directory: projects/ping_dashboard
 
     steps:
       - name: Checkout code
@@ -42,4 +42,4 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t space-dashboard:latest ./projects/space_dashboard
+          docker build -t ping-dashboard:latest ./projects/ping_dashboard
